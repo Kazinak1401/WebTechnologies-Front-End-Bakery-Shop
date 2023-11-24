@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Menu</title>
+        <!--Links-->
+        <link rel="stylesheet" href="stylepack/menu.css">
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+    </head>
+    <body>
+        
+        <!--Cart modal-->
+      <div class="cart-modal-overlay">
+        <div class="cart-modal">
+          <i id="close-btn" class="fas fa-times"></i>
+            <h1 class="cart-is-empty">Cart is empty</h1>
+          
+            <div class="product-rows">
+              <div class="product-row">
+                <img class="cart-image" src="images/How-To-Make-Fairy-Cakes.jpg" alt="">
+                <span class ="cart-price">57</span>
+                <input class="product-quantity" type="number" value="1">
+                <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+            <div class="total">
+              <h1 class="cart-total">TOTAL</h1>
+                <span class="total-price">$57</span>
+                  <button class="purchase-btn">PURCHASE</button>
+            </div>
+          </div>
+    </div>
+
+        <!--Navbar-->
+        <header>
+          <div class="px-3 py-2 border-bottom">
+              <div class="container">
+                  <div class="navbar-brand d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                      <a href="#" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-black text-decoration-none">
+                          <img src="favicon.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+                          Bakery Shop
+                      </a>
+                      <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                          <li>
+                              <a href="index.html" class="nav-link text-black">
+                                  <i class="fa-solid fa-house-chimney bi d-block mx-auto mb-1" style="color: #87aaaa;"></i>
+                                  Home
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#" class="nav-link text-black">
+                                  <i class="fa-solid fa-cake-candles bi d-block mx-auto mb-1" style="color: #87aaaa;"></i>                                    
+                                  Menu
+                              </a>
+                          </li>
+                          <li>
+                            <a href="aboutus.html" class="nav-link text-black">
+                                <i class="fa-solid fa-user bi d-block mx-auto mb-1" style="color: #87aaaa;"></i>
+                                About Us
+                            </a>
+                        </li>
+                          <li>
+                              <a href="produce.html" class="nav-link text-black">
+                                  <i class="fa-solid fa-shield-cat bi d-block mx-auto mb-1" style="color: #87aaaa;"></i>
+                                  Produce
+                              </a>
+                          </li>
+                          <!--Dropdown-->
+                          <li>
+                              <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-city bi d-block mx-auto mb-1" style="color: #87aaaa;"></i>                                    
+                                  City
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Astana</a></li>
+                                  <li><a class="dropdown-item" href="#">Almaty</a></li>
+                                  <li><a class="dropdown-item" href="#">Shymkent</a></li>
+                                  <li><a class="dropdown-item" href="#">Taraz</a></li>
+                                </ul>
+                          </li>
+                          <li>
+                            <div class="cart-btn">
+                              <i id="cart" class="fa-solid fa-cart-shopping bi d-block mx-auto mb-1" style="color: #87aaaa;"></i>
+                                <span class ="cart-quantity">1</span>
+                            </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </header>
+
+
+        <!--Menu Cards-->
+<div class="container mx-auto mt-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+    <img src="images/PDP_Apr_Cake_Cross-Deco_01__68877.jpg" class="product-image" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">CROSS DECORATED CAKE</h5>
+      <span class="product-price">$70</span>
+      <p class="card-text text-muted">Add this sweet decoration to your cake—perfect for Easter Sunday brunch dessert! Cake pictured is a 9 inch cake Vanilla Celebration with SusieBlue vanilla buttercream.</p>
+      <button class="add-to-cart"><i class="fa-solid fa-cart-arrow-down"></i>Add to cart</button>
+      <!--
+        <a href="#" data-name="Cross Decorated Cake" data-price="138" class="add-to-cart btn btn-primary mr-2"><i class="fa-solid fa-cart-arrow-down"></i>Add to Cart</a>
+      -->
+      <a href="#" class="btn btn-primary"><i class="fa-solid fa-link"></i> More...</a>
+    </div>
+    </div>
+      </div>    
+         <div class="col-md-4">
+  <div class="card" style="width: 18rem;">
+    <img src="images/PDP_May_Cake_Mday-Vintage_02__37703.jpg" class="product-image" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">MOTHER'S DAY VINTAGE DECORATED CAKE</h5>
+      <span class="product-price">$65</span>
+      <p class="card-text text-muted">A beautiful vintage decorated cake made perfect for Mother's Day! Add this decoration to any of our specialty cakes.</p>
+      <button class="add-to-cart"><i class="fa-solid fa-cart-arrow-down"></i>Add to cart</button>
+      <a href="#" class="btn btn-primary"><i class="fa-solid fa-link"></i> More...</a>
+    </div>
+    </div>
+      </div>    
+            <div class="col-md-4">
+  <div class="card" style="width: 18rem;">
+    <img src="images/How-To-Make-Fairy-Cakes.jpg" class="product-image" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">ICED FAIRY CAKE</h5>
+      <span class="product-price">$57</span>
+      <p class="card-text text-muted">Fairy cakes are a great recipe to introduce your children to baking and are a fun activity for the whole family to enjoy together. In just 25 minutes you'll have made a batch of 12 delicious fairy cakes.</p>
+      <button class="add-to-cart"><i class="fa-solid fa-cart-arrow-down"></i>Add to cart</button>
+      <a href="#" class="btn btn-primary"><i class="fa-solid fa-link"></i> More...</a>
+    </div>
+    </div>
+    </div>
+    <div class="divider"></div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+    <img src="images/PDP_May_Cake_SusieBouquet-Deco_01__21806.jpg" class="product-image" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">SUSIEBOUQUET DECORATED CAKE</h5>
+      <span class="product-price">$80</span>
+      <p class="card-text text-muted">Introducing this new floral decoration for Mother's Day! Add this decoration to any of our specialty cakes.</p>
+      <button class="add-to-cart"><i class="fa-solid fa-cart-arrow-down"></i>Add to cart</button>
+      <a href="#" class="btn btn-primary"><i class="fa-solid fa-link"></i> More...</a>
+    </div>
+    </div>
+      </div>    
+         <div class="col-md-4">
+  <div class="card" style="width: 18rem;">
+    <img src="images/photo_2023-04-21_22-19-11.jpg" class="product-image" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">WHOOPIE PIE WITH BERRIES</h5>
+      <span class="product-price">$87</span>
+      <p class="card-text text-muted">These whoopie pies are soft, cakey cookies studded with tart, juicy blueberries and filled with tangy cream cheese frosting. I take them to family and school events and they are always the first thing gone! A croissant is a buttery, flaky, croissant is a buttery, flaky, </p>
+      <button class="add-to-cart"><i class="fa-solid fa-cart-arrow-down"></i>Add to cart</button>
+      <a href="#" class="btn btn-primary"><i class="fa-solid fa-link"></i> More...</a>
+    </div>
+    </div>
+      </div>    
+            <div class="col-md-4">
+  <div class="card" style="width: 18rem;">
+    <img src="images/photo_2023-04-21_22-19-28.jpg" class="product-image" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">RED VELVET CAKE WITH NUTS ON TOP</h5>
+      <span class="product-price">$105</span>
+      <p class="card-text text-muted">Red Velvet Cake is a classic, much-loved recipe. The combination of cocoa layers with cream cheese frosting is a southern favorite! A croissant is a buttery, flaky, croissant is a buttery, flaky, croissant is a buttery, flaky, </p>
+      <button class="add-to-cart"><i class="fa-solid fa-cart-arrow-down"></i>Add to cart</button>
+      <a href="#" class="btn btn-primary"><i class="fa-solid fa-link"></i> More...</a>
+    </div>
+    </div>
+    </div>
+    <div class="divider"></div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+    <img src="images/photo_2023-04-21_22-21-29.jpg" class="product-image" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">CHOCOLOATE TRUFFLE CAKE</h5>
+      <span class="product-price">$130</span>
+      <p class="card-text text-muted">Crafted with the finest ingredients and an abundance of chocolatey goodness, they are a delightful treat for the taste buds and a visual delight for the eyes.</p>
+      <button class="add-to-cart"><i class="fa-solid fa-cart-arrow-down"></i>Add to cart</button>
+      <a href="#" class="btn btn-primary"><i class="fa-solid fa-link"></i> More...</a>
+    </div>
+    </div>
+      </div>    
+         <div class="col-md-4">
+  <div class="card" style="width: 18rem;">
+    <img src="images/photo_2023-04-21_22-24-05.jpg" class="product-image" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">ITALIAN CIABATTA WITH UNIQUE RECIPE</h5>
+      <span class="product-price">$15</span>
+      <p class="card-text text-muted">Ciabatta is a rustic Italian bread that is made from wheat flour, water, olive oil, salt, and yeast. The name means “slipper” in Italian and refers to its elongated, broad, and flat shape. </p>
+      <button class="add-to-cart"><i class="fa-solid fa-cart-arrow-down"></i>Add to cart</button>
+      <a href="#" class="btn btn-primary"><i class="fa-solid fa-link"></i> More...</a>
+    </div>
+    </div>
+      </div>    
+            <div class="col-md-4">
+  <div class="card" style="width: 18rem;">
+    <img src="images/photo_2023-04-21_22-24-37.jpg" class="product-image" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">FRENCH BAGUETTE</h5>
+      <span class="product-price">$7</span>
+      <p class="card-text text-muted">If you have eaten at a French restaurant, its likely you have tried this iconic bread. Simply put, a baguette is a long, thin loaf of French bread that is characterized by a crisp crust and chewy center. The ingredients are pure and simple, consisting of water, flour, salt and yeast.</p>
+      <button class="add-to-cart"><i class="fa-solid fa-cart-arrow-down"></i>Add to cart</button>
+      <a href="#" class="btn btn-primary"><i class="fa-solid fa-link"></i> More...</a>
+    </div>
+    </div>
+    </div>
+    <div class="divider"></div>  
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+    <img src="images/photo_2023-04-21_22-25-06.jpg" class="product-image" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">CROISSANT</h5>
+      <span class="product-price">$10</span>
+      <p class="card-text text-muted">A croissant is a buttery, flaky, viennoiserie pastry inspired by the shape of the Austrian kipferl but using the French yeast-leavened laminated dough.</p>
+      <button class="add-to-cart"><i class="fa-solid fa-cart-arrow-down"></i>Add to cart</button>
+      <a href="#" class="btn btn-primary"><i class="fa-solid fa-link"></i> More...</a>
+    </div>
+    </div>
+      </div>    
+         
+    </div>
+    </div>
+    </div>
+    <!--Footer-->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 Bakery Shop. All rights reserved.</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+        </footer>
+      </div>
+
+      <!--Scripts-->
+      <script src="/docs/5.3/assets/js/color-modes.js"></script>
+      <script src="https://kit.fontawesome.com/d2f14e5910.js" crossorigin="anonymous"></script>
+      <script src="cart.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+      <script src="scripts/menu.js"></script>
+</body>
+</html>
